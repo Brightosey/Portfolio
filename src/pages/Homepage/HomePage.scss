@@ -1,0 +1,172 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.home {
+
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    text-align:center;
+    background: linear-gradient(to left, $header-color, $background-color);
+    padding: 2rem 1rem;
+
+    @include tablet {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        text-align: justify;
+    }
+  }
+
+  &__image {
+    margin: 0px auto;
+    margin-bottom: 20px;
+
+    @include tablet {
+        width: 40%;
+    }
+
+    &-avatar {
+        width: 200px;
+        height: 200px;
+        border-radius:30px;
+
+        @include tablet {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+        @include desktop {
+            width: 300px;
+            height: 300px;
+        }
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary-text-color;
+
+    @include tablet {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    @include desktop {
+        font-size: 2.5rem;
+    }
+  }
+
+
+  &__cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #1e6655;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+      background: #134d3d;
+    }
+  }
+
+  &__skills {
+    margin: 40px auto;
+    width: 90%;
+    padding: 20px;
+    border: 2px solid $border-color;
+    border-radius: 15px;
+    background: $background-color; // Keeps consistency with your design
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+    &-title {
+        font-size: 26px;
+        color: $primary-text-color;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 25px;
+
+        @include tablet {
+            font-size: 38px;
+        }
+
+        @include desktop {
+            font-size: 42px;
+        }
+    }
+
+    &-container {
+        display: flex;
+        flex-wrap: wrap; // Ensures responsiveness
+        justify-content: center; // Centers items
+        gap: 15px;
+        padding: 10px;
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        flex-direction: column; // Stacks icon & text
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $primary-text-color;
+        padding: 8px 2px;
+        border-radius: 12px;
+        width: 45%; // Ensures two items per row on mobile
+        max-width: 200px; // Prevents excessive width
+        text-align: center;
+        background: rgba(90, 86, 86, 0.1); // Slightly transparent background
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05); // Subtle zoom effect
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        @include tablet {
+            width: 40%; // Three per row on tablet
+        }
+
+        @include desktop {
+            width: 50%; // Four per row on desktop
+        }
+    }
+
+    &-icon {
+        width: 70px;
+        margin-bottom: 8px;
+
+        @include tablet {
+            width: 120px;
+        }
+
+        @include desktop {
+            width: 150px;
+        }
+    }
+
+    &-text {
+        font-size: 14px;
+        font-weight: 500;
+        color: $primary-text-color;
+
+        @include tablet {
+            font-size: 16px;
+        }
+
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+}
+
+}
