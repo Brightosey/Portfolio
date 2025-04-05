@@ -6,9 +6,26 @@ import nodejsIcon from "../../assets/Icon/nodejs.png";
 import reactIcon from "../../assets/Icon/react.png";
 import sassIcon from "../../assets/Icon/sass.png";
 import sqlIcon from "../../assets/Icon/sql.png";
-import { Link } from "react-dom"
+import githubIcon from "../../assets/Icon/github.png";
+import { Link } from "react-router-dom";
 
 function HomePage() {
+  const testimonials = [
+    {
+      message:
+        "Bright took initiative on the frontend during two hackathons, confidently owned tasks, and always delivered. A strong team asset.",
+      name: "Dula Purkaystha",
+      relation: "Team Member",
+    },
+
+    {
+      message:
+        "Bright led the frontend during a fast-paced hackathon, delivering a clean, user-friendly interface under pressure. Creative, reliable, and a great teammate.",
+      name: "Marison Federipe",
+      relation: "Team Member",
+    },
+  ];
+
   return (
     <section className="home">
       <section className="home__hero">
@@ -22,9 +39,7 @@ function HomePage() {
             My name is Bright Oyiborhoka, and I build intuitive and impactful
             digital experiences.
           </h1>
-          {/* <Link to="/portfolio">
-            View My Work
-            </Link> */}
+          <Link to="/portfolio">View My Work</Link>
         </div>
       </section>
       <section className="home__skills">
@@ -60,6 +75,30 @@ function HomePage() {
           <div className="home__skills-wrap">
             <img className="home__skills-icon" src={sqlIcon} alt="sqlIcon" />
           </div>
+          <div className="home__skills-wrap">
+            <img className="home__skills-icon" src={githubIcon} alt="sqlIcon" />
+          </div>
+        </article>
+      </section>
+      <section className="home__value">
+        <article className="home__service">
+          <h2 className="home__service-header">Services i'm providing</h2>
+          <div className="home__service-item">
+            <p className="home__service-list">Frontend Developer</p>
+            <p className="home__service-list">Backend Developer</p>
+          </div>
+        </article>
+        <article className="home__testimonial">
+          <p className="home__testimonial-header">Testimonial</p>
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="home__testimonial-container">
+              <p className="home__testimonial-message">{testimonial.message}</p>
+              <div className="home__testimonial-tags">
+                <p className="home__testimonial-tag">{testimonial.name}</p>
+                <p className="home__testimonial-tag">{testimonial.relation}</p>
+              </div>
+            </div>
+          ))}
         </article>
       </section>
     </section>

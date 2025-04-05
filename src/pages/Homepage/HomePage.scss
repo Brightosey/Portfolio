@@ -3,20 +3,19 @@
 @use "../../styles/partials/variables" as *;
 
 .home {
-
   &__hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 20%;
-    text-align:center;
+    text-align: center;
     background: linear-gradient(to left, $header-color, $background-color);
     padding: 2rem 1rem;
 
     @include tablet {
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        text-align: justify;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      text-align: justify;
     }
   }
 
@@ -25,24 +24,24 @@
     margin-bottom: 20px;
 
     @include tablet {
-        width: 40%;
+      width: 40%;
     }
 
     &-avatar {
-        width: 200px;
-        height: 200px;
-        border-radius:30px;
+      width: 200px;
+      height: 200px;
+      border-radius: 30px;
 
-        @include tablet {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-        }
+      @include tablet {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
 
-        @include desktop {
-            width: 300px;
-            height: 300px;
-        }
+      @include desktop {
+        width: 300px;
+        height: 300px;
+      }
     }
   }
 
@@ -52,15 +51,14 @@
     color: $primary-text-color;
 
     @include tablet {
-        font-size: 2rem;
-        width: 60%;
+      font-size: 2rem;
+      width: 60%;
     }
 
     @include desktop {
-        font-size: 2.5rem;
+      font-size: 2.5rem;
     }
   }
-
 
   &__cta {
     display: inline-block;
@@ -82,91 +80,200 @@
     padding: 20px;
     border: 2px solid $border-color;
     border-radius: 15px;
-    background: $background-color; // Keeps consistency with your design
+    /* background: $background-color;  */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
 
     &-title {
-        font-size: 26px;
-        color: $primary-text-color;
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 25px;
+      font-size: 26px;
+      color: $primary-text-color;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 25px;
 
-        @include tablet {
-            font-size: 38px;
-        }
+      @include tablet {
+        font-size: 38px;
+      }
 
-        @include desktop {
-            font-size: 42px;
-        }
+      @include desktop {
+        font-size: 42px;
+      }
     }
 
     &-container {
-        display: flex;
-        flex-wrap: wrap; // Ensures responsiveness
-        justify-content: center; // Centers items
-        gap: 15px;
-        padding: 10px;
+      display: flex;
+      flex-wrap: wrap; // Ensures responsiveness
+      justify-content: center; // Centers items
+      gap: 15px;
+      padding: 10px;
 
-        @include tablet {
-            justify-content: space-evenly;
-        }
+      @include tablet {
+        justify-content: space-evenly;
+      }
     }
 
     &-wrap {
-        display: flex;
-        flex-direction: column; // Stacks icon & text
-        align-items: center;
-        justify-content: center;
-        border: 1px solid $primary-text-color;
-        padding: 8px 2px;
-        border-radius: 12px;
-        width: 45%; // Ensures two items per row on mobile
-        max-width: 200px; // Prevents excessive width
-        text-align: center;
-        background: rgba(90, 86, 86, 0.1); // Slightly transparent background
-        transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column; // Stacks icon & text
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $border-color;
+      padding: 8px 2px;
+      border-radius: 12px;
+      width: 45%; // Ensures two items per row on mobile
+      max-width: 200px; // Prevents excessive width
+      text-align: center;
+      background: rgba(90, 86, 86, 0.1); // Slightly transparent background
+      transition: all 0.3s ease-in-out;
 
-        &:hover {
-            transform: scale(1.05); // Subtle zoom effect
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
+      &:hover {
+        transform: scale(1.05); // Subtle zoom effect
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
 
-        @include tablet {
-            width: 40%; // Three per row on tablet
-        }
+      @include tablet {
+        width: 40%; // Three per row on tablet
+      }
 
-        @include desktop {
-            width: 50%; // Four per row on desktop
-        }
+      @include desktop {
+        width: 50%; // Four per row on desktop
+      }
     }
 
     &-icon {
-        width: 70px;
-        margin-bottom: 8px;
+      width: 70px;
+      margin-bottom: 8px;
 
-        @include tablet {
-            width: 120px;
-        }
+      @include tablet {
+        width: 120px;
+      }
 
-        @include desktop {
-            width: 150px;
-        }
+      @include desktop {
+        width: 150px;
+      }
     }
 
     &-text {
-        font-size: 14px;
-        font-weight: 500;
-        color: $primary-text-color;
+      font-size: 14px;
+      font-weight: 500;
+      color: $primary-text-color;
 
-        @include tablet {
-            font-size: 16px;
-        }
+      @include tablet {
+        font-size: 16px;
+      }
 
-        @include desktop {
-            font-size: 18px;
-        }
+      @include desktop {
+        font-size: 18px;
+      }
     }
-}
+  }
 
+  &__value {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #fefefe;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__service {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    flex: 1;
+
+    &-header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #222;
+
+      @include tablet {
+        font-size: 2rem;
+      }
+
+      @include desktop {
+        font-size: 2.3rem;
+      }
+    }
+
+    &-list {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.75rem;
+      border: 1px solid $alternate-color;
+      border-radius: 8px;
+      background-color: #f7f7f7;
+      color: #333;
+
+      @include tablet {
+        font-size: 1.5rem;
+      }
+
+      @include desktop {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__testimonial {
+    /*  background-color: #fff; */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 1.5rem;
+    border-radius: 12px;
+    /* border: 2px solid $alternate-color; */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    flex: 1;
+
+    &-container {
+      border-top: 1px solid #eee;
+      padding: 1rem 0;
+    }
+
+    &-header {
+      font-size: 24px;
+      font-weight: bold;
+
+      @include tablet {
+        font-size: 2rem;
+      }
+
+      @include desktop {
+        font-size: 2.3rem;
+      }
+    }
+
+    &-message {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 0.5rem;
+
+      @include tablet {
+        font-size: 1.2rem;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    &-tag {
+      background-color: #f0f0f0;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+    }
+  }
 }

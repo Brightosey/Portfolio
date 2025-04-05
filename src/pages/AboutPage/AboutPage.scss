@@ -1,0 +1,166 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  gap: 1.5rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @include desktop {
+      gap: 3rem;
+    }
+  }
+
+  &__intro {
+     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: justify;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $alternate-color;
+
+    @include tablet {
+      text-align: justify;
+      width: 110%;
+      padding-right: 30px;
+      border-bottom: 0px;
+    }
+
+    @include desktop {
+      width: 130%;
+    }
+
+    &-text {
+      flex: 1;
+      font-size: 1.5rem;
+      line-height: 1.6;
+      color: $primary-text-color;
+      padding: 1rem;
+      border-radius: 20px;
+     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      
+
+      @include tablet {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__excitement {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    line-height: 1.6;
+    gap: 1rem;
+    text-align: justify;
+
+    @include tablet {
+      text-align: justify;
+    }
+
+    &-container {
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: $primary-text-color;
+      margin-bottom: 1rem;
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      color: $primary-text-color;
+      line-height: 1.6;
+
+      @include tablet {
+        border-bottom: 0px;
+        font-size: 2rem;
+      }
+
+    }
+  }
+
+  &__highlight {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      gap: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 20px;
+
+      @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      @include desktop {
+        justify-content: space-evenly;
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+      margin: 30px auto;
+      text-align: center;
+      color: $primary-text-color;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      margin: 0px auto;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 30%;
+
+      @include tablet {
+        width: 30%;
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: $alternate-color;
+      overflow: hidden;
+    }
+
+    &-img {
+      width: 60%;
+      height: 60%;
+      object-fit: cover;
+    }
+
+    &-text {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
