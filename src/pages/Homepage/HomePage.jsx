@@ -39,7 +39,7 @@ function HomePage() {
             My name is Bright Oyiborhoka, and I build intuitive and impactful
             digital experiences.
           </h1>
-          <Link to="/portfolio">View My Work</Link>
+          <Link to="/portfolio" className="home__cta">View My Work</Link>
         </div>
       </section>
       <section className="home__skills">

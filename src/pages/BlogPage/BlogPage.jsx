@@ -1,24 +1,30 @@
 import "./BlogPage.scss";
+import blogImage1 from "../../assets/Images/blog-image-1.png";
+import blogImage2 from "../../assets/Images/blog-image-2.png";
+import blogImage3 from "../../assets/Images/blog-image-3.png";
+import blogImage4 from "../../assets/Images/blog-image-4.png";
 
 function BlogPage() {
   return (
     <section className="blog">
-      <h1>The Developer’s Journey: Beyond the Code</h1>
-      <p>
+      <h1 className="blog__title">The Developer’s Journey: Beyond the Code</h1>
+      <p className="blog__intro">
         Being a software developer is not just about writing lines of code. It’s
         an art—an intricate dance between the logical mind and the human
         experience. Every keystroke is more than just syntax; it’s a bridge
         between the unseen and the tangible, between the machine and the person.
         In this world of zeros and ones, we, as developers, find ourselves at
-        the intersection of creativity, logic, and human connection
+        the intersection of creativity, logic, and human connection.
       </p>
-      <article>
-        <figure>
-          <img src="" alt="" />
+      <article className="blog__article">
+        <figure className="blog__figure">
+          <img src={blogImage1} alt="image" className="blog__image" />
         </figure>
-        <div>
-          <h2>The Many Nuances of Being a Developer</h2>
-          <p>
+        <div className="blog__content">
+          <h2 className="blog__subtitle">
+            The Many Nuances of Being a Developer
+          </h2>
+          <p className="blog__text">
             A developer’s role is nuanced—an ever-evolving space where every
             solution is born from collaboration, empathy, and adaptability.
             We’re not merely problem solvers, but rather, we are also listeners,
@@ -34,13 +40,15 @@ function BlogPage() {
           </p>
         </div>
       </article>
-      <article>
-        <figure>
-          <img src="" alt="" />
+      <article className="blog__article">
+        <figure className="blog__figure">
+          <img src={blogImage2} alt="image" className="blog__image" />
         </figure>
-        <div>
-          <h2>A Developer’s Role: The Middleman Between Two Worlds</h2>
-          <p>
+        <div className="blog__content">
+          <h2 className="blog__subtitle">
+            A Developer’s Role: The Middleman Between Two Worlds
+          </h2>
+          <p className="blog__text">
             Much like professionals who work closely with people—whether
             doctors, teachers, or counselors—developers too are in constant
             interaction. But where we differ is in the scope of our interaction.
@@ -57,13 +65,15 @@ function BlogPage() {
           </p>
         </div>
       </article>
-      <article>
-        <figure>
-          <img src="" alt="" />
+      <article className="blog__article">
+        <figure className="blog__figure">
+          <img src={blogImage3} alt="image" className="blog__image" />
         </figure>
-        <div>
-          <h2>The Developer’s Impact: Breathing Life into the Abstract</h2>
-          <p>
+        <div className="blog__content">
+          <h2 className="blog__subtitle">
+            The Developer’s Impact: Breathing Life into the Abstract
+          </h2>
+          <p className="blog__text">
             Perhaps what makes being a developer truly unique is the tangible
             impact we have. With every line of code, we are not just building
             applications—we are breathing life into ideas that extend beyond us.
@@ -77,17 +87,28 @@ function BlogPage() {
           </p>
         </div>
       </article>
-      <h2>Conclusion: The Developer as a Catalyst for Change</h2>
-      <p>
-        So, the next time you think of a developer, remember, it’s more than
-        just someone who writes code. A developer is someone who understands
-        nuance, communicates with both humans and machines, and ultimately
-        brings something to life that impacts the world. We are the silent
-        architects of progress, shaping the future with every line we write,
-        every collaboration we embrace, and every solution we create. Being a
-        developer is more than a profession—it’s an ongoing journey of
-        interaction, growth, and transformation.
-      </p>
+      <article className="blog__article">
+        <figure className="blog__figure">
+          <img src={blogImage4} alt="image" className="blog__image" />
+        </figure>
+        <div className="blog__content">
+          <h2 className="blog__subtitle">
+            Conclusion: The Developer as a Catalyst for Change
+          </h2>
+          <p className="blog__text">
+            So, the next time you think of a developer, remember, it’s more than
+            just someone who writes code. A developer is someone who understands
+            nuance, communicates with both humans and machines, and ultimately
+            brings something to life that impacts the world. We are the silent
+            architects of progress, shaping the future with every line we write,
+            every collaboration we embrace, and every solution we create. Being
+            a developer is more than a profession—it’s an ongoing journey of
+            interaction, growth, and transformation.
+          </p>
+        </div>
+      </article>
     </section>
   );
 }
+
+export default BlogPage;

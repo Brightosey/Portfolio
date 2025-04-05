@@ -89,19 +89,21 @@
     padding: 2rem;
     background-color: #f9f9f9;
     border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    margin: 0px auto;
 
-    @include tablet {
-      flex-direction: row;
+    @include desktop {
+      display: flex;
       justify-content: space-between;
       text-align: left;
+      margin-top: 6rem;
     }
 
     &-text {
-      max-width: 600px;
+    
+        @include desktop {
+            width: 300%;
+        }
     }
 
     &-heading {
@@ -124,9 +126,10 @@
 
     &-figure {
       margin-top: 2rem;
-      display: flex;
 
-      @include tablet {
+      @include desktop {
+        margin: auto 0px;
+        align-self: flex-end;
       }
     }
 
@@ -137,8 +140,8 @@
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-      @include tablet {
-        margin: 0px;
+      @include desktop {
+       
       }
     }
   }

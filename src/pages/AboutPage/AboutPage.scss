@@ -75,7 +75,7 @@
     }
 
     &-container {
-      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      background: $alt-bg;
       border-radius: 20px;
       padding: 1.5rem;
     }
@@ -105,7 +105,7 @@
     &-list {
       display: flex;
       flex-wrap: wrap;
-      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      background: $alt-bg;
       gap: 1.5rem;
       padding: 1.5rem;
       border-radius: 20px;
