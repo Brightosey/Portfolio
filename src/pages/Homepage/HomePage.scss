@@ -64,13 +64,13 @@
     display: inline-block;
     margin-top: 1rem;
     padding: 10px 20px;
-    background: #1e6655;
+    background:#134d3d;
     color: white;
     border-radius: 5px;
     text-decoration: none;
 
     &:hover {
-      background: #134d3d;
+      background:$hover-bg;
     }
   }
 
@@ -202,6 +202,12 @@
       }
     }
 
+    &-item {
+      @include tablet {
+        width: 50%;
+      }
+    }
+
     &-list {
       font-size: 1rem;
       margin-bottom: 0.5rem;
@@ -222,13 +228,15 @@
   }
 
   &__testimonial {
-    /*  background-color: #fff; */
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: $alt-bg;
     padding: 1.5rem;
     border-radius: 12px;
-    /* border: 2px solid $alternate-color; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     flex: 1;
+
+    @include tablet {
+      width: 500%;
+    }
 
     &-container {
       border-top: 1px solid #eee;

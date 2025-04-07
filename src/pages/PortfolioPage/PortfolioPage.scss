@@ -89,17 +89,32 @@
     }
 
     a {
-      color: $alternate-color;
-      font-weight: 500;
-      text-decoration: underline;
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 5px 10px;
+      background:  #134d3d;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
 
       &:hover {
-        color: darken($alternate-color, 20%);
+        background:$hover-bg;
       }
     }
   }
 
   &__link {
     margin-top: 0.5rem;
+  }
+
+  
+  &__title {
+    font-size: 30px;
+    text-align: center;
+
+    &:hover {
+      color: $alternate-color;
+      border-bottom: 2px solid $alternate-color;
+    } 
   }
 }

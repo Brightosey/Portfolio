@@ -7,7 +7,7 @@ import blogImage4 from "../../assets/Images/blog-image-4.png";
 function BlogPage() {
   return (
     <section className="blog">
-      <h1 className="blog__title">The Developer’s Journey: Beyond the Code</h1>
+      <h2 className="blog__title">The Developer’s Journey: Beyond the Code</h2>
       <p className="blog__intro">
         Being a software developer is not just about writing lines of code. It’s
         an art—an intricate dance between the logical mind and the human

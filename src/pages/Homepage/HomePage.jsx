@@ -82,7 +82,7 @@ function HomePage() {
       </section>
       <section className="home__value">
         <article className="home__service">
-          <h2 className="home__service-header">Services i'm providing</h2>
+          <h2 className="home__service-header">My Craft</h2>
           <div className="home__service-item">
             <p className="home__service-list">Frontend Developer</p>
             <p className="home__service-list">Backend Developer</p>

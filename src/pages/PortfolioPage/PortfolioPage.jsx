@@ -6,6 +6,7 @@ import instockImage from "../../assets/Images/instock.png";
 function PortfolioPage() {
   return (
     <section className="portfolio">
+      <h1 className="portfolio__title portfolio__title--1">Portfolio</h1>
       <article className="portfolio__project">
         <figure className="portfolio__image-wrapper">
           <img
@@ -45,7 +46,7 @@ function PortfolioPage() {
           </p>
           <p className="portfolio__git">
             <strong>Github Links:</strong>{" "}
-            <p>
+            <p className="portfolio__link">
               <a
                 href="https://github.com/Brightosey/Capstone-Project.git"
                 target="_blank"
@@ -53,7 +54,7 @@ function PortfolioPage() {
                 Frontend Code
               </a>
             </p>
-            <p>
+            <p className="portfolio__link">
               <a
                 href="https://github.com/Brightosey/Capstone-Project-api.git"
                 target="_blank"
@@ -66,6 +67,67 @@ function PortfolioPage() {
             <strong>Live Site:</strong>{" "}
             <a href="https://relofoods.ng" target="_blank">
               relofoods.ng
+            </a>
+          </p>
+        </div>
+      </article>
+      <article className="portfolio__project">
+        <figure className="portfolio__image-wrapper">
+          <img
+            src={instockImage}
+            alt="Relofoods site Image"
+            className="portfolio__image"
+          />
+        </figure>
+        <div className="portfolio__content">
+          <h1 className="portfolio__title">Instock</h1>
+          <p className="portfolio__tech-stack">
+            Team Project | React, Express, MySQL
+          </p>
+          <p className="portfolio__description">
+            InStock is a full-stack inventory management system developed for a
+            Fortune 500 client to replace their outdated, underperforming
+            platform. Built with React, Express, and MySQL, the application
+            delivers a clean, responsive user experience and a backend built for
+            scale.
+            <br />
+            But the real story was the collaboration behind the code. Working as
+            part of an Agile team of five, we planned, built, and iterated
+            together—using Jira to manage our sprints, align on tasks, and stay
+            adaptable through change. Daily standups and constant communication
+            taught me how to navigate blockers, support teammates, and keep
+            momentum alive.
+            <br />
+            This experience showed me that great software is a team sport—and
+            that thoughtful collaboration is just as essential as clean,
+            scalable code.
+          </p>
+          <p className="portfolio__deployment">
+            <strong>Deployment:</strong> Vercel (frontend), Render (backend)
+          </p>
+          <p className="portfolio__git">
+            <strong>Github Links:</strong>{" "}
+            <p className="portfolio__link">
+              <a
+                href="https://instock-zeta.vercel.app/"
+                target="_blank"
+              >
+                Frontend Code
+              </a>
+            </p>
+            <p className="portfolio__link">
+              <a
+                href="https://github.com/Brightosey/instock-api.git"
+                target="_blank"
+              >
+                Backend Code
+              </a>
+            </p>
+          </p>
+          <p className="portfolio__link">
+            <strong>Live Site:</strong>{" "}
+            <a href="https://instock-zeta.vercel.app/" target="_blank">
+              instock.com
             </a>
           </p>
         </div>
@@ -104,15 +166,15 @@ function PortfolioPage() {
           </p>
           <p className="portfolio__git">
             <strong>Github Links:</strong>{" "}
-            <p>
+            <p className="portfolio__link">
               <a
-                href="https://github.com/Brightosey/Bright-Oyiborhoka-snaps.git"
+                href="https://bright-oyiborhoka-snaps.vercel.app/"
                 target="_blank"
               >
                 Frontend Code
               </a>
             </p>
-            <p>
+            <p className="portfolio__link">
               <a
                 href="https://github.com/Brightosey/Bright-Oyiborhoka-snaps-api.git"
                 target="_blank"
@@ -128,67 +190,6 @@ function PortfolioPage() {
               target="_blank"
             >
               snaps.com
-            </a>
-          </p>
-        </div>
-      </article>
-      <article className="portfolio__project">
-        <figure className="portfolio__image-wrapper">
-          <img
-            src={instockImage}
-            alt="Relofoods site Image"
-            className="portfolio__image"
-          />
-        </figure>
-        <div className="portfolio__content">
-          <h1 className="portfolio__title">Instock</h1>
-          <p className="portfolio__tech-stack">
-            Team Project | React, Express, MySQL
-          </p>
-          <p className="portfolio__description">
-            InStock is a full-stack inventory management system developed for a
-            Fortune 500 client to replace their outdated, underperforming
-            platform. Built with React, Express, and MySQL, the application
-            delivers a clean, responsive user experience and a backend built for
-            scale.
-            <br />
-            But the real story was the collaboration behind the code. Working as
-            part of an Agile team of five, we planned, built, and iterated
-            together—using Jira to manage our sprints, align on tasks, and stay
-            adaptable through change. Daily standups and constant communication
-            taught me how to navigate blockers, support teammates, and keep
-            momentum alive.
-             <br />
-            This experience showed me that great software is a team sport—and
-            that thoughtful collaboration is just as essential as clean,
-            scalable code.
-          </p>
-          <p className="portfolio__deployment">
-            <strong>Deployment:</strong> Vercel (frontend), Render (backend)
-          </p>
-          <p className="portfolio__git">
-            <strong>Github Links:</strong>{" "}
-            <p>
-              <a
-                href="https://github.com/Brightosey/instock.git"
-                target="_blank"
-              >
-                Frontend Code
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://github.com/Brightosey/instock-api.git"
-                target="_blank"
-              >
-                Backend Code
-              </a>
-            </p>
-          </p>
-          <p className="portfolio__link">
-            <strong>Live Site:</strong>{" "}
-            <a href="https://instock-zeta.vercel.app/" target="_blank">
-              instock.com
             </a>
           </p>
         </div>

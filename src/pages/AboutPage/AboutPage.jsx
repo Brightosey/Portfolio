@@ -10,6 +10,7 @@ import Craft from "../../components/Craft/Craft";
 function AboutPage() {
   return (
     <section className="about">
+      <h1 className="about__title">About</h1>
       <article className="about__content">
         <div className="about__intro">
           <p className="about__intro-text">
@@ -40,7 +41,7 @@ function AboutPage() {
           </div>
 
           <div className="about__highlight">
-            <h2 className="about__highlight-title">highlights</h2>
+            <h2 className="about__highlight-title">Highlights</h2>
             <div className="about__highlight-list">
               <figure className="about__highlight-item">
                 <div className="about__highlight-icon">

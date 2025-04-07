@@ -1,3 +1,4 @@
+import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/Homepage/HomePage";
@@ -6,6 +7,7 @@ import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 import BlogPage from "./pages/BlogPage/BlogPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (

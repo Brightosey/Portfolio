@@ -3,27 +3,30 @@
 @use "../../styles/partials/variables" as *;
 
 .footer {
-    &__social-links {
-        display: flex;
-        justify-content: flex-end;
-        position:fixed;
-        bottom: 0;
-        right: 0;
-        gap: 10px;
-        padding:0.5rem 1rem;
-    }
+  background: $header-color;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
 
-    /* &__link {
-    }
- */
-    &__icon {
-        width: 40px;
-        height: auto;
-        cursor: pointer;
+  &__show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s 0s;
+  }
 
-        @include tablet {
-            width: 50px;
-            height: auto;
-        }
-    }
+  &__social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0.5rem 1rem;
+  }
+
+  &__icon {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+  }
 }

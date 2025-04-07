@@ -9,6 +9,17 @@
   padding: 2rem;
   gap: 1.5rem;
 
+  &__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: $alternate-color;
+      border-bottom: 2px solid $alternate-color;
+    } 
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -48,12 +59,13 @@
 
     &-text {
       flex: 1;
+      font-family: "Montserrat";
       font-size: 1.5rem;
       line-height: 1.6;
       color: $primary-text-color;
       padding: 1rem;
       border-radius: 20px;
-     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+     background: $alt-bg;
       
 
       @include tablet {
@@ -86,6 +98,10 @@
       text-align: center;
       color: $primary-text-color;
       margin-bottom: 1rem;
+
+      @include tablet {
+        font-size: 2rem;
+      }
     }
 
     &-text {
@@ -121,10 +137,14 @@
     }
 
     &-title {
-      font-size: 24px;
+      font-size: 1.5rem;
       margin: 30px auto;
       text-align: center;
       color: $primary-text-color;
+
+      @include tablet {
+        font-size: 2rem;
+      }
     }
 
     &-item {
