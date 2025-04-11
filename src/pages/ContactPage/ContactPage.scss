@@ -4,13 +4,13 @@
 
 .contact {
   &__title {
-    font-size: 30px;
+    font-size: 30rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
 
     &:hover {
       color: $alternate-color;
-      border-bottom: 2px solid $alternate-color;
+      border-bottom: 2rem solid $alternate-color;
     } 
   }
   &__container {
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 20rem;
   }
 
   &__form {
@@ -30,12 +30,12 @@
     gap: 1.5rem;
     background: $background-color;
     padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16rem;
+    box-shadow: 0 8rem 16rem rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 
     &:hover {
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10rem 24rem rgba(0, 0, 0, 0.15);
     }
   }
 
@@ -43,21 +43,21 @@
   &__textarea {
     width: 100%;
     padding: 1rem;
-    border: 1px solid $alternate-color;
-    border-radius: 12px;
+    border: 1rem solid $alternate-color;
+    border-radius: 12rem;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
     &:focus {
       border-color: #4caf50;
-      box-shadow: 0 0 5px $alternate-color;
+      box-shadow: 0 0 5rem $alternate-color;
       outline: none;
     }
   }
 
   &__textarea {
     resize: vertical;
-    min-height: 150px;
+    min-height: 150rem;
   }
 
   &__btn {
@@ -70,7 +70,7 @@
     color: $secodary-text-color;
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 8rem;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -100,7 +100,7 @@
     background-color: #f9f9f9;
     border-radius: 1rem;
     text-align: center;
-    margin: 0px auto;
+    margin: 0rem auto;
 
     @include desktop {
       display: flex;
@@ -138,7 +138,7 @@
       margin-top: 2rem;
 
       @include desktop {
-        margin: auto 0px;
+        margin: auto 0rem;
         align-self: flex-end;
       }
     }
@@ -146,9 +146,9 @@
     &-img {
       width: 50%;
       height: auto;
-      margin: 0px auto;
+      margin: 0rem auto;
       border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4rem 12rem rgba(0, 0, 0, 0.1);
 
       @include desktop {
        

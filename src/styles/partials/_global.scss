@@ -1,19 +1,21 @@
 @use "../partials/mixins" as *;
 @use "../partials/variables" as *;
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
 }
 
 body {
-    background-color:$background-color;
-    font-family: "Montserrat";
+  background-color: $background-color;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

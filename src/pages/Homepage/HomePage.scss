@@ -15,32 +15,27 @@
     @include tablet {
       flex-direction: row-reverse;
       justify-content: space-around;
-      text-align: justify;
+      text-align:left;
     }
   }
 
   &__image {
-    margin: 0px auto;
-    margin-bottom: 20px;
+    margin: 0rem auto;
+    margin-bottom: 20rem;
 
     @include tablet {
       width: 40%;
     }
 
     &-avatar {
-      width: 200px;
-      height: 200px;
-      border-radius: 30px;
+      width: 200rem;
+      height: 200rem;
+      border-radius: 30rem;
 
       @include tablet {
-        width: 250px;
-        height: 250px;
+        width: 200rem;
+        height: 200rem;
         border-radius: 50%;
-      }
-
-      @include desktop {
-        width: 300px;
-        height: 300px;
       }
     }
   }
@@ -63,10 +58,10 @@
   &__cta {
     display: inline-block;
     margin-top: 1rem;
-    padding: 10px 20px;
+    padding: 10rem 20rem;
     background:#134d3d;
     color: white;
-    border-radius: 5px;
+    border-radius: 5rem;
     text-decoration: none;
 
     &:hover {
@@ -75,28 +70,28 @@
   }
 
   &__skills {
-    margin: 40px auto;
+    margin: 40rem auto;
     width: 90%;
-    padding: 20px;
-    border: 2px solid $border-color;
-    border-radius: 15px;
+    padding: 20rem;
+    border: 2rem solid $border-color;
+    border-radius: 15rem;
     /* background: $background-color;  */
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    box-shadow: 0 4rem 10rem rgba(0, 0, 0, 0.1); // Subtle shadow for depth
 
     &-title {
-      font-size: 26px;
+      font-size: 26rem;
       color: $primary-text-color;
       text-align: center;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin-bottom: 25rem;
 
       @include tablet {
-        font-size: 38px;
+        font-size: 38rem;
       }
 
       @include desktop {
-        font-size: 42px;
+        font-size: 42rem;
       }
     }
 
@@ -104,8 +99,8 @@
       display: flex;
       flex-wrap: wrap; // Ensures responsiveness
       justify-content: center; // Centers items
-      gap: 15px;
-      padding: 10px;
+      gap: 15rem;
+      padding: 10rem;
 
       @include tablet {
         justify-content: space-evenly;
@@ -117,18 +112,18 @@
       flex-direction: column; // Stacks icon & text
       align-items: center;
       justify-content: center;
-      border: 1px solid $border-color;
-      padding: 8px 2px;
-      border-radius: 12px;
+      border: 1rem solid $border-color;
+      padding: 8rem 2rem;
+      border-radius: 12rem;
       width: 45%; // Ensures two items per row on mobile
-      max-width: 200px; // Prevents excessive width
+      max-width: 200rem; // Prevents excessive width
       text-align: center;
       background: rgba(90, 86, 86, 0.1); // Slightly transparent background
       transition: all 0.3s ease-in-out;
 
       &:hover {
         transform: scale(1.05); // Subtle zoom effect
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6rem 12rem rgba(0, 0, 0, 0.15);
       }
 
       @include tablet {
@@ -141,29 +136,29 @@
     }
 
     &-icon {
-      width: 70px;
-      margin-bottom: 8px;
+      width: 70rem;
+      margin-bottom: 8rem;
 
       @include tablet {
-        width: 120px;
+        width: 120rem;
       }
 
       @include desktop {
-        width: 150px;
+        width: 150rem;
       }
     }
 
     &-text {
-      font-size: 14px;
+      font-size: 14rem;
       font-weight: 500;
       color: $primary-text-color;
 
       @include tablet {
-        font-size: 16px;
+        font-size: 16rem;
       }
 
       @include desktop {
-        font-size: 18px;
+        font-size: 18rem;
       }
     }
   }
@@ -183,8 +178,8 @@
   &__service {
     background-color: #fff;
     padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12rem;
+    box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.05);
     flex: 1;
 
     &-header {
@@ -212,8 +207,8 @@
       font-size: 1rem;
       margin-bottom: 0.5rem;
       padding: 0.75rem;
-      border: 1px solid $alternate-color;
-      border-radius: 8px;
+      border: 1rem solid $alternate-color;
+      border-radius: 8rem;
       background-color: #f7f7f7;
       color: #333;
 
@@ -230,8 +225,8 @@
   &__testimonial {
     background: $alt-bg;
     padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12rem;
+    box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.05);
     flex: 1;
 
     @include tablet {
@@ -239,12 +234,12 @@
     }
 
     &-container {
-      border-top: 1px solid #eee;
+      border-top: 1rem solid #eee;
       padding: 1rem 0;
     }
 
     &-header {
-      font-size: 24px;
+      font-size: 24rem;
       font-weight: bold;
 
       @include tablet {
@@ -281,7 +276,7 @@
     &-tag {
       background-color: #f0f0f0;
       padding: 0.4rem 0.8rem;
-      border-radius: 6px;
+      border-radius: 6rem;
     }
   }
 }

@@ -10,13 +10,13 @@
   gap: 1.5rem;
 
   &__title {
-    font-size: 30px;
+    font-size: 30rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
 
     &:hover {
       color: $alternate-color;
-      border-bottom: 2px solid $alternate-color;
+      border-bottom: 2rem solid $alternate-color;
     } 
   }
 
@@ -43,14 +43,14 @@
     justify-content: center;
     gap: 1rem;
     text-align: justify;
-    padding-bottom: 30px;
-    border-bottom: 2px solid $alternate-color;
+    padding-bottom: 30rem;
+    border-bottom: 2rem solid $alternate-color;
 
     @include tablet {
       text-align: justify;
       width: 110%;
-      padding-right: 30px;
-      border-bottom: 0px;
+      padding-right: 30rem;
+      border-bottom: 0rem;
     }
 
     @include desktop {
@@ -64,7 +64,7 @@
       line-height: 1.6;
       color: $primary-text-color;
       padding: 1rem;
-      border-radius: 20px;
+      border-radius: 20rem;
      background: $alt-bg;
       
 
@@ -88,7 +88,7 @@
 
     &-container {
       background: $alt-bg;
-      border-radius: 20px;
+      border-radius: 20rem;
       padding: 1.5rem;
     }
 
@@ -110,7 +110,7 @@
       line-height: 1.6;
 
       @include tablet {
-        border-bottom: 0px;
+        border-bottom: 0rem;
         font-size: 2rem;
       }
 
@@ -124,7 +124,7 @@
       background: $alt-bg;
       gap: 1.5rem;
       padding: 1.5rem;
-      border-radius: 20px;
+      border-radius: 20rem;
 
       @include tablet {
         flex-direction: row;
@@ -138,7 +138,7 @@
 
     &-title {
       font-size: 1.5rem;
-      margin: 30px auto;
+      margin: 30rem auto;
       text-align: center;
       color: $primary-text-color;
 
@@ -150,7 +150,7 @@
     &-item {
       display: flex;
       flex-direction: column;
-      margin: 0px auto;
+      margin: 0rem auto;
       align-items: center;
       justify-content: center;
       gap: 1rem;
@@ -165,8 +165,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 70px;
-      height: 70px;
+      width: 70rem;
+      height: 70rem;
       border-radius: 50%;
       background-color: $alternate-color;
       overflow: hidden;
