@@ -12,16 +12,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
 
     @include tablet {
-      padding: 0.5rem 3rem;
+      padding: 0.5rem 1rem;
     }
   }
 
   &__logo {
     & img {
-      width: 40rem;
+      width: 2.5rem;
       height: auto;
     }
   }
@@ -39,7 +39,7 @@
     }
 
     .header__icon {
-      width: 30rem;
+      width: 1.875rem;
       height: auto;
     }
   }
@@ -50,7 +50,7 @@
     &--open {
       display: flex;
       position: absolute;
-      top: 80rem;
+      top: 5rem;
       left: 0;
       width: 100%;
       background: $header-color;
@@ -64,33 +64,10 @@
       position: static;
       display: flex;
       flex-direction: row;
-     /*  width: auto; */
       background: transparent;
       padding: 0;
     }
   }
-
-  /* &__nav {
-    display: none;
-
-    &--open {
-      display: flex;
-      position: absolute;
-      top: 80rem;
-      left: 0;
-      width: 100%;
-      background: $header-color;
-      padding: 1rem;
-
-      @include tablet {
-        display: none;
-      }
-    }
-
-    @include tablet {
-      display: flex;
-    }
-  } */
 
   &__list {
     display: flex;
@@ -122,7 +99,7 @@
     color: #333;
     font-size: 0.7rem;
     font-weight: 500;
-    border-radius: 5rem;
+    border-radius: .3125rem;
     cursor: pointer;
 
     &:hover {
@@ -133,8 +110,8 @@
     &.active {
       background-color: $hover-bg;
       color: $background-color;
-      border: 2rem solid $border-color;
-      padding: 2rem 10rem;
+      border: .125rem solid $border-color;
+      padding: .125rem .625rem;
     }
 
     @include tablet {
