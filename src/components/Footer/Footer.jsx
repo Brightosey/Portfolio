@@ -11,24 +11,19 @@ function Footer() {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
       const fullHeight = document.body.scrollHeight;
-  
-      if (scrollY + windowHeight >= fullHeight - 10) {
-        setFooterVisible(true);
-      } else {
-        setFooterVisible(false);
-      }
+
+      setFooterVisible(scrollY + windowHeight >= fullHeight - 10);
     };
-  
+
     checkScroll(); // Run on mount too
     window.addEventListener("scroll", checkScroll);
     window.addEventListener("resize", checkScroll); // Handle resizes too
-  
+
     return () => {
       window.removeEventListener("scroll", checkScroll);
       window.removeEventListener("resize", checkScroll);
     };
   }, []);
-  
 
   return (
     <footer className={`footer ${isFooterVisible ? "footer__show" : ""}`}>

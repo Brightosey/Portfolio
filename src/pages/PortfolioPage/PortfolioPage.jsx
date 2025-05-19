@@ -2,6 +2,7 @@ import "./PortfolioPage.scss";
 import reloFoodImage from "../../assets/Images/Relofoods.png";
 import snapsImage from "../../assets/Images/snaps.png";
 import instockImage from "../../assets/Images/instock.png";
+import demoImage from "../../assets/Images/demo-image.png";
 
 function PortfolioPage() {
   return (
@@ -109,7 +110,7 @@ function PortfolioPage() {
             <strong>Github Links:</strong>{" "}
             <p className="portfolio__link">
               <a
-                href="https://instock-zeta.vercel.app/"
+                href="https://github.com/Brightosey/instock"
                 target="_blank"
               >
                 Frontend Code
@@ -190,6 +191,48 @@ function PortfolioPage() {
               target="_blank"
             >
               snaps.com
+            </a>
+          </p>
+        </div>
+      </article>
+      <article className="portfolio__project">
+        <figure className="portfolio__image-wrapper">
+          <img
+            src={demoImage}
+            alt="Demo site Image"
+            className="portfolio__image"
+          />
+        </figure>
+        <div className="portfolio__content">
+          <h1 className="portfolio__title">Woodcraft</h1>
+          <p className="portfolio__description">
+          This project is a fully responsive, multi-page frontend portfolio website built using React, SCSS (Sass), and Lucide React, and deployed on Vercel. Designed to showcase a woodcraft and joinery business, the site includes structured sections such as a promotional production page with aligned text and imagery, an interactive FAQ with icon-based toggle functionality, a fully validated contact form with CAPTCHA integration, and a well-organized privacy policy page. The layout adapts seamlessly across mobile, tablet, and desktop devices using custom SCSS with media queries. Styling is implemented using the BEM methodology to ensure modularity and scalability. This project highlights my ability to build clean, user-friendly interfaces with component-based architecture and responsive design principles.
+          </p>
+
+          <p className="portfolio__tech-stack">
+            <strong>Tech Stack:</strong> HTML, SCSS, JavaScript.
+          </p>
+          <p className="portfolio__deployment">
+            <strong>Deployment:</strong> Vercel (frontend)
+          </p>
+          <p className="portfolio__git">
+            <strong>Github Links:</strong>{" "}
+            <p className="portfolio__link">
+              <a
+                href="https://github.com/Brightosey/demo-site"
+                target="_blank"
+              >
+                Frontend Code
+              </a>
+            </p>
+          </p>
+          <p className="portfolio__link">
+            <strong>Live Site:</strong>{" "}
+            <a
+              href="https://demo-site-wine.vercel.app/"
+              target="_blank"
+            >
+              woodcraft.com
             </a>
           </p>
         </div>
