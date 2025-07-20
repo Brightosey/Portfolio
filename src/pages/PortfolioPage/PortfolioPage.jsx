@@ -3,6 +3,7 @@ import reloFoodImage from "../../assets/Images/Relofoods.png";
 import snapsImage from "../../assets/Images/snaps.png";
 import instockImage from "../../assets/Images/instock.png";
 import demoImage from "../../assets/Images/demo-image.png";
+import weddingWebImage from "../../assets/Images/weddinweb.png";
 
 function PortfolioPage() {
   return (
@@ -83,7 +84,8 @@ function PortfolioPage() {
         <div className="portfolio__content">
           <h1 className="portfolio__title">Instock</h1>
           <p className="portfolio__tech-stack">
-            Team Project | React, Express, MySQL
+            Team Project | React, SCSS, Node.js, Express, MySQL, Vite, Knex.js,
+            Render, Vercel
           </p>
           <p className="portfolio__description">
             InStock is a full-stack inventory management system developed for a
@@ -109,10 +111,7 @@ function PortfolioPage() {
           <p className="portfolio__git">
             <strong>Github Links:</strong>{" "}
             <p className="portfolio__link">
-              <a
-                href="https://github.com/Brightosey/instock"
-                target="_blank"
-              >
+              <a href="https://github.com/Brightosey/instock" target="_blank">
                 Frontend Code
               </a>
             </p>
@@ -206,7 +205,19 @@ function PortfolioPage() {
         <div className="portfolio__content">
           <h1 className="portfolio__title">Woodcraft</h1>
           <p className="portfolio__description">
-          This project is a fully responsive, multi-page frontend portfolio website built using React, SCSS (Sass), and Lucide React, and deployed on Vercel. Designed to showcase a woodcraft and joinery business, the site includes structured sections such as a promotional production page with aligned text and imagery, an interactive FAQ with icon-based toggle functionality, a fully validated contact form with CAPTCHA integration, and a well-organized privacy policy page. The layout adapts seamlessly across mobile, tablet, and desktop devices using custom SCSS with media queries. Styling is implemented using the BEM methodology to ensure modularity and scalability. This project highlights my ability to build clean, user-friendly interfaces with component-based architecture and responsive design principles.
+            This project is a fully responsive, multi-page frontend portfolio
+            website built using React, SCSS (Sass), and Lucide React, and
+            deployed on Vercel. Designed to showcase a woodcraft and joinery
+            business, the site includes structured sections such as a
+            promotional production page with aligned text and imagery, an
+            interactive FAQ with icon-based toggle functionality, a fully
+            validated contact form with CAPTCHA integration, and a
+            well-organized privacy policy page. The layout adapts seamlessly
+            across mobile, tablet, and desktop devices using custom SCSS with
+            media queries. Styling is implemented using the BEM methodology to
+            ensure modularity and scalability. This project highlights my
+            ability to build clean, user-friendly interfaces with
+            component-based architecture and responsive design principles.
           </p>
 
           <p className="portfolio__tech-stack">
@@ -218,21 +229,107 @@ function PortfolioPage() {
           <p className="portfolio__git">
             <strong>Github Links:</strong>{" "}
             <p className="portfolio__link">
-              <a
-                href="https://github.com/Brightosey/demo-site"
-                target="_blank"
-              >
+              <a href="https://github.com/Brightosey/demo-site" target="_blank">
                 Frontend Code
               </a>
             </p>
           </p>
           <p className="portfolio__link">
             <strong>Live Site:</strong>{" "}
-            <a
-              href="https://demo-site-wine.vercel.app/"
-              target="_blank"
-            >
+            <a href="https://demo-site-wine.vercel.app/" target="_blank">
               woodcraft.com
+            </a>
+          </p>
+        </div>
+      </article>
+      <article className="portfolio__project">
+        <figure className="portfolio__image-wrapper">
+          <img
+            src={weddingWebImage}
+            alt="wedding site Image"
+            className="portfolio__image"
+          />
+        </figure>
+        <div className="portfolio__content">
+          <h1 className="portfolio__title">💍Wedding Website</h1>
+          <p className="portfolio__description">
+            <p>
+              <strong>
+                Wedding Website – A Personalized Full-Stack Celebration
+                Experience
+              </strong>
+              <br />
+              <em>
+                React | SCSS | Node.js | Express | PostgreSQL | Vite | Knex.js |
+                Render | Vercel
+              </em>
+            </p>
+
+            <p>
+              This project is a full-stack wedding website built to create an
+              interactive, visually stunning, and heartfelt digital space for a
+              real-life couple’s celebration. From the moment visitors land on
+              the site, they are welcomed into a personalized experience that
+              blends aesthetics, performance, and user engagement.
+            </p>
+
+            <p>
+              The frontend is built with React and Vite for blazing-fast load
+              times, styled with custom SCSS modules following the BEM
+              methodology to ensure clean, modular, and responsive design. I
+              implemented dynamic components including a{" "}
+              <strong>countdown timer</strong>, a{" "}
+              <strong>digital guestbook</strong> (Wishlist), and a{" "}
+              <strong>Wedding Party carousel</strong> that adapts gracefully
+              across devices.
+            </p>
+
+            <p>
+              On the backend, I developed a RESTful API using Node.js, Express,
+              and PostgreSQL, with Knex.js as the query builder. Features
+              include a fully functional <strong>wish submission system</strong>{" "}
+              with GIF support (via Giphy API), likes tracking, and real-time
+              data retrieval for guest interaction. The backend is securely
+              hosted on Render with proper CORS configuration and environment
+              variable handling.
+            </p>
+
+            <p>
+              The site is deployed on Vercel for seamless CI/CD and performance,
+              while the database and server run on Render, ensuring scalability
+              and separation of concerns.
+            </p>
+
+            <p>
+              This project showcases my ability to own the development lifecycle
+              from UI/UX design to database architecture, and reflects my
+              passion for creating joyful, purpose-driven web experiences.
+            </p>
+          </p>
+          <p className="portfolio__tech-stack">
+            <strong>Tech Stack:</strong> React, SCSS, Node.js, Express,
+            PostgreSQL, Vite, Knex.js, Render, Vercel
+          </p>
+          <p className="portfolio__deployment">
+            <strong>Deployment:</strong> Vercel (frontend), Render (backend)
+          </p>
+          <p className="portfolio__git">
+            <strong>Github Links:</strong>{" "}
+            <p className="portfolio__link">
+              <a href="https://github.com/Brightosey/Union" target="_blank">
+                Frontend Code
+              </a>
+            </p>
+            <p className="portfolio__link">
+              <a href="https://github.com/Brightosey/union-api" target="_blank">
+                Backend Code
+              </a>
+            </p>
+          </p>
+          <p className="portfolio__link">
+            <strong>Live Site:</strong>{" "}
+            <a href="https://union-iota.vercel.app" target="_blank">
+              union.ng
             </a>
           </p>
         </div>
