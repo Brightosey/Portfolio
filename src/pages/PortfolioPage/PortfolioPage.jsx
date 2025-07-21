@@ -3,7 +3,7 @@ import reloFoodImage from "../../assets/Images/Relofoods.png";
 import snapsImage from "../../assets/Images/snaps.png";
 import instockImage from "../../assets/Images/instock.png";
 import demoImage from "../../assets/Images/demo-image.png";
-import weddingWebImage from "../../assets/Images/weddinweb.png";
+import weddingWebImage from "../../assets/Images/weddingweb.png";
 
 function PortfolioPage() {
   return (
@@ -329,7 +329,7 @@ function PortfolioPage() {
           <p className="portfolio__link">
             <strong>Live Site:</strong>{" "}
             <a href="https://union-iota.vercel.app" target="_blank">
-              union.ng
+              union.com
             </a>
           </p>
         </div>
