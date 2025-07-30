@@ -2,15 +2,15 @@ import "./Craft.scss";
 
 function Craft() {
   const skillSets = [
-    { name: "HTML", level: 90 },
-    { name: "SCSS", level: 80 },
-    { name: "JAVASCRIPT", level: 70 },
+    { name: "HTML", level: 100 },
+    { name: "SCSS", level: 100 },
+    { name: "JAVASCRIPT", level: 80 },
     { name: "REACT", level: 80 },
     { name: "NODE", level: 90 },
     { name: "EXPRESS", level: 90 },
     { name: "mySQL", level: 50 },
-    { name: "KNEX", level: 50 },
-    { name: "GIT", level: 80 },
+    { name: "KNEX", level: 80 },
+    { name: "GIT", level: 90 },
   ];
 
   const hobbies = [

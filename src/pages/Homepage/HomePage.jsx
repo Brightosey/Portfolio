@@ -13,6 +13,12 @@ function HomePage() {
   const testimonials = [
     {
       message:
+        "Bright Oyiborhoka is a talented developer. In the course of building Relo Foods website, he supported and exceeded our expectations in every way. His ability to understand and present our key messages in an imaginative and creative way gave us a huge amount of confidence in him. I can’t recommend him highly enough and we look forward to continuing our working relationship together.",
+      name: "Lukman OlaniyanLukman Olaniyan",
+      relation: "Founder @Relo Foods",
+    },
+    {
+      message:
         "Bright took initiative on the frontend during two hackathons, confidently owned tasks, and always delivered. A strong team asset.",
       name: "Dula Purkaystha",
       relation: "Team Member",
@@ -39,7 +45,9 @@ function HomePage() {
             My name is Bright Oyiborhoka, and I build intuitive and impactful
             digital experiences.
           </h1>
-          <Link to="/portfolio" className="home__cta">View My Work</Link>
+          <Link to="/portfolio" className="home__cta">
+            View My Work
+          </Link>
         </div>
       </section>
       <section className="home__skills">
