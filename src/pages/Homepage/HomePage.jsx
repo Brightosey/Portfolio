@@ -14,7 +14,7 @@ function HomePage() {
     {
       message:
         "Bright Oyiborhoka is a talented developer. In the course of building Relo Foods website, he supported and exceeded our expectations in every way. His ability to understand and present our key messages in an imaginative and creative way gave us a huge amount of confidence in him. I can’t recommend him highly enough and we look forward to continuing our working relationship together.",
-      name: "Lukman OlaniyanLukman Olaniyan",
+      name: "Lukman Olaniyan",
       relation: "Founder @Relo Foods",
     },
     {

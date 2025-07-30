@@ -3,6 +3,7 @@ import blogImage1 from "../../assets/Images/blog-image-1.png";
 import blogImage2 from "../../assets/Images/blog-image-2.png";
 import blogImage3 from "../../assets/Images/blog-image-3.png";
 import blogImage4 from "../../assets/Images/blog-image-4.png";
+import blogImage5 from "../../assets/Images/clock.jpg";
 
 function BlogPage() {
   return (
@@ -16,6 +17,26 @@ function BlogPage() {
         In this world of zeros and ones, we, as developers, find ourselves at
         the intersection of creativity, logic, and human connection.
       </p>
+      <article className="blog__article">
+        <figure className="blog__figure">
+          <img src={blogImage5} alt="image" className="blog__image" />
+        </figure>
+        <div className="blog__content">
+          <h2 className="blog__subtitle">
+            Why It’s Still a Great Time to Be a Developer
+          </h2>
+          <p className="blog__text">
+            The tech space is evolving fast, but that’s what makes it exciting.
+            Even with market shifts and AI empowerment, developers are leading
+            the charge—building what’s next.Remote work has unlocked global
+            opportunities, open-source is thriving, and creative problem-solving
+            is more valuable than ever. You don’t have to know everything, just
+            keep learning, building, and sharing your work. Your code matters.
+            Your ideas matter. And there’s never been a better time to grow as a
+            developer.
+          </p>
+        </div>
+      </article>
       <article className="blog__article">
         <figure className="blog__figure">
           <img src={blogImage1} alt="image" className="blog__image" />
