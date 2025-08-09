@@ -4,6 +4,7 @@ import snapsImage from "../../assets/Images/snaps.png";
 import instockImage from "../../assets/Images/instock.png";
 import demoImage from "../../assets/Images/demo-image.png";
 import weddingWebImage from "../../assets/Images/weddingweb.png";
+import todoImage from "../../assets/Images/todo-image.png";
 
 function PortfolioPage() {
   return (
@@ -334,6 +335,99 @@ function PortfolioPage() {
           </p>
         </div>
       </article>
+      <article className="portfolio__project">
+  <figure className="portfolio__image-wrapper">
+    <img
+      src={todoImage}
+      alt="Task Management App Image"
+      className="portfolio__image"
+    />
+  </figure>
+  <div className="portfolio__content">
+    <h1 className="portfolio__title">📋 Task Management App</h1>
+    <p className="portfolio__description">
+      <p>
+        <strong>
+          Task Management App – A Full-Stack Productivity & Workflow Solution
+        </strong>
+        <br />
+        <em>
+          React | SCSS | Javascript | Node.js | Express | MySQL | Vite | Knex.js |
+          Render | Vercel | neon 
+        </em>
+      </p>
+
+      <p>
+        This project is a full-stack task management system designed to help
+        users stay organized, prioritize effectively, and manage time across
+        personal or team-based workflows. The app allows for intuitive task
+        creation, editing, filtering by status, and deadline management in a
+        clean and responsive UI.
+      </p>
+
+      <p>
+        The frontend is built with React and Vite for fast performance and
+        responsiveness, styled using SCSS modules with BEM methodology for
+        maintainable and scalable design. The interface features a dynamic
+        <strong> calendar-based date picker</strong>, modal forms for both
+        <strong> task creation</strong> and <strong>task editing</strong>, and
+        <strong>status filters</strong> for seamless UX.
+      </p>
+
+      <p>
+        The layout is <strong>highly responsive across all screen sizes</strong>, ensuring a consistent and smooth experience on mobile phones, tablets, and desktops alike.
+      </p>
+
+      <p>
+        On the backend, I implemented a RESTful API using Node.js, Express, and
+        SQL with Knex.js. CRUD operations allow users to interact with
+        tasks in real-time—from creating to updating and deleting—with clear
+        status tracking ("pending", "in-progress", "completed"). Proper CORS
+        policies, environment variable separation, and error handling were
+        configured for production readiness.
+      </p>
+
+      <p>
+        The app is deployed with a split-stack strategy: frontend on Vercel for
+        seamless CI/CD, and backend on Render for reliable database connectivity
+        and server-side logic.
+      </p>
+
+      <p>
+        This project reflects my ability to build fully responsive,
+        user-friendly apps from frontend to backend while maintaining clean code
+        practices, accessibility, and deployable solutions ready for production.
+      </p>
+    </p>
+    <p className="portfolio__tech-stack">
+      <strong>Tech Stack:</strong> React, SCSS, Javascript, Node.js, Express, MySQL,
+      Vite, Knex.js, Render, Vercel
+    </p>
+    <p className="portfolio__deployment">
+      <strong>Deployment:</strong> Vercel (frontend), Render (backend), neon (database)
+    </p>
+    <p className="portfolio__git">
+      <strong>Github Links:</strong>
+      <p className="portfolio__link">
+        <a href="https://github.com/Brightosey/todo" target="_blank">
+          Frontend Code
+        </a>
+      </p>
+      <p className="portfolio__link">
+        <a href="https://github.com/Brightosey/todo-api" target="_blank">
+          Backend Code
+        </a>
+      </p>
+    </p>
+    <p className="portfolio__link">
+      <strong>Live Site:</strong>{" "}
+      <a href="https://todo-dusky-five.vercel.app" target="_blank">
+        taskapp.com
+      </a>
+    </p>
+  </div>
+</article>
+
     </section>
   );
 }
